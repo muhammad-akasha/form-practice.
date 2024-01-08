@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+  <style>
+    p{text-transform: capitalize}
+    body{background: antiquewhite}
+    h1{text-align: center;text-transform: capitalize;text-decoration: underline}
+  </style>
+</head>
+<body>
+  <h1>user registration form</h1>
+  <form>
+    <p>name: <input required type="text" name="name" id="name" maxlength="30" minlength="3"></p>
+    <p>father name: <input required type="text" name="fname" id="fname" maxlength="30" minlength="3"></p>
+    <P>password: <input type="password" name="password" id="password" maxlength="30" minlength="8" required> </P>
+     <p>
+        email: <input type="email" name="email" id="email" required>
+      </p>
+      <p>
+        websites: <input type="url" name="website" id="website" required>
+      </p>
+      <p>search: <input type="search" name="search" id="search"></p>
+  <p>bio:<textarea name="bio" id="bio" cols="30" rows="10"> </textarea></p> 
+    <fieldset>
+      <legend>
+        gender
+      </legend>
+     <label for="male"><input type="radio" name="gender" id="male">male</label> 
+      <br>
+     <label for="female"><input type="radio" name="gender" id="female">female</label> 
+      <br>
+      <label for="other"> <input type="radio" name="gender" id="other">other</label>
+    </fieldset>
+    <br>
+   
+    <p>country: <select name="country" id="country">
+      <option value="pakistan">pakistan</option>
+      <option value="india">india</option>
+      <option value="southafrica">south africa</option>
+      <option value="indonasia">indonasia</option>
+    </select>
+    <br><br><br>
+    <p>9:favourite color: 
+      <select name="color" id="color">
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+          <option value="purple">purple</option>
+          <option value="gray">gray</option>
+      </select>
+      <p>
+        profile picture: <input type="file" name="image" id="image" accept="image/*">
+      </p>
+     
+      <button>cancel</button>
+      <button>submit</button>
+
+  </form>
+  
+</body>
+</html>
